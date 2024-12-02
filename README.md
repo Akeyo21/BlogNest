@@ -1,5 +1,5 @@
 # BlogNest
-BlogNest is a blog platform designed to master the MERN stack. It allows users to view blogs, filter them by category, and create or publish their own. Signing in is required to access publishing features, ensuring a personalized blogging experience.
+BlogNest is a blog platform where users can view blogs, filter them by category, and publish their own after signing in. Built with the MERN stack (MongoDB, Express, React, Node.js), it demonstrates my skills in full-stack development.
 
 # Table of Contents
 - Features
