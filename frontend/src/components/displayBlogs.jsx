@@ -10,7 +10,8 @@ const DisplayBlogs = () => {
     const [category, setCategory] = useState('')
 
     useEffect(() => {
-      fetch('http://localhost:4000/api/blogs')
+      // fetch('http://localhost:4000/api/blogs')
+      fetch('https://blognest-tsf6.onrender.com/api/blogs')
       .then(res => res.json())
       .then(data => setBlogs(data))
     },[])

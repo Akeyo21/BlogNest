@@ -15,8 +15,9 @@ app.use(express.json());
 // connect to db
 mongoose.connect(process.env.MONGODB_URI)
     .then(() => {
-        app.listen(4000, () => {
-            console.log('Connected to db & listening on port 4000')
+        const PORT = process.env.PORT || 4000;
+        app.listen(PORT, () => {
+            console.log(`Connected to db & listening on port ${PORT}`)
         });
     })
     .catch((err) => {

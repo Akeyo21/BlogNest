@@ -18,7 +18,7 @@ const SignUp = () => {
     const [errors,setErrors] = useState({}); 
     
     useEffect(() => {
-        fetch('http://localhost:4000/api/users')
+        fetch('https://blognest-tsf6.onrender.com/api/users')
         .then(resp => resp.json())
         .then(data => {
             const emails = data.map((user) => user.email)
@@ -85,7 +85,7 @@ const SignUp = () => {
         e.preventDefault();
 
         if(validateForm()){
-            const signUpPromise = fetch('http://localhost:4000/api/users/register',{
+            const signUpPromise = fetch('https://blognest-tsf6.onrender.com/api/users/register',{
                 method:'POST',
                 headers: {
                     'Content-Type':'application/json'

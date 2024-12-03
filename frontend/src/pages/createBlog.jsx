@@ -56,7 +56,7 @@ const CreateBlog = () => {
         data.append('image', formData.image);
         data.append('content', formData.content);
 
-        const postBlogPromise = fetch('http://localhost:4000/api/blogs',{
+        const postBlogPromise = fetch('https://blognest-tsf6.onrender.com/api/blogs',{
             method: 'POST',
             body: data,
         })
