@@ -68,7 +68,7 @@ const SignUp = () => {
         if (!formData.password.trim()) {
             newErrors.password = 'Password is required';
         } else {
-            const passwordFormat = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+            const passwordFormat = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$/;
             if (!passwordFormat.test(formData.password)) {
                 newErrors.password = 'Password must be at least 8 characters long and contain at least 1 letter and 1 number';
             }
